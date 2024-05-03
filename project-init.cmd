@@ -97,6 +97,10 @@ warden env exec -T php-fpm php bin/magento indexer:reindex
 ## Create admin user
 warden create-admin-user
 
+## Set the store URL
+STORE_URL="https://${TRAEFIK_DOMAIN}/"
+BACKEND_URL="${STORE_URL}${ADMIN_PATH}"
+
 ## output to user
 CYAN='\033[0;36m'
 NC='\033[0m'
