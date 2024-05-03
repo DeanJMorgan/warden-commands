@@ -26,7 +26,7 @@ print_info "Initialising ${WARDEN_ENV_NAME}..."
 
 ## setup SSL if not already done so
 print_info "Setting up SSL for ${TRAEFIK_DOMAIN}..."
-if [[ ! -f ~/.den/ssl/certs/${TRAEFIK_DOMAIN}.crt.pem ]]; then
+if [[ ! -f ~/.warden/ssl/certs/${TRAEFIK_DOMAIN}.crt.pem ]]; then
     print_info "Setting up SSL for ${TRAEFIK_DOMAIN}..."
     warden sign-certificate "${TRAEFIK_DOMAIN}"
 fi
