@@ -40,3 +40,5 @@ if [[ -z ${MAGENTO_CRYPT_KEY} ]]; then
     print_info "Please set this value in the .env file and try again."
     exit 1
 fi
+
+print_info "All required variables set in .env file. You're good to go!"
