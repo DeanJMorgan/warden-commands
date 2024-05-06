@@ -26,6 +26,7 @@ warden check-env-file
 if [ -f ./.warden/database/${WARDEN_ENV_NAME}.db.sql.gz ]; then
   print_info "Restoring database..."
   pv ./.warden/database/${WARDEN_ENV_NAME}.db.sql.gz | gunzip | warden db import
+  print_info "Database restored successfully."
 else
   print_info "No database backup exists for this environment."
   exit 1
