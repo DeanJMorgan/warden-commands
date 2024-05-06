@@ -2,7 +2,7 @@
 
 This repository is a collection of commands that can be used with the Warden CLI tool. The commands are designed to help with the setup and distribution of Magento 2 projects between developers. There are three scenarios that the commands are designed to help with:
 
-1. Adding additional commands to the Warden CLI tool to help with the setup and distribution of Magento 2 projects.
+1. Adding additional commands to the Warden CLI for Magento 2 projects already using Warden.
 2. Adding Warden to a pre-existing Magento 2 project.
 3. Creating a new Magento 2 project with the Warden CLI tool.
 
