@@ -29,4 +29,5 @@ warden env exec -T php-fpm php bin/magento config:set web/unsecure/base_url \
     "${STORE_URL}"
 warden env exec -T php-fpm php bin/magento config:set web/secure/base_url \
     "${STORE_URL}"
-    
+
+print_info "Store URLs updated to ${STORE_URL}"
