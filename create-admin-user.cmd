@@ -27,3 +27,13 @@ warden env exec -T php-fpm php bin/magento admin:user:create \
     --admin-email="admin@admin.com" \
     --admin-firstname="admin" \
     --admin-lastname="admin"
+
+## output to user
+CYAN='\033[0;36m'
+NC='\033[0m'
+BOLD='\033[1m'
+
+echo "============================================================"
+echo -e "${BOLD} - Admin User:${NC} admin"
+echo -e "${BOLD} - Admin Password:${NC} admin!234567890"
+echo "============================================================"
