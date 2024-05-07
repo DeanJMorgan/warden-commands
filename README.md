@@ -49,6 +49,8 @@ This will create a `.env` file in the root of your project directory.
 Update the `.env` file with the following values.
 
 ```bash
+ADMIN_PATH=backend # Admin path
+
 MAGENTO_PACKAGE=magento/project-community-edition # Magento package to install
 MAGENTO_VERSION=2.4.7 # Magento version to install
 MAGENTO_PUBLIC_KEY=[public_key_here] # Your Magento Marketplace public key
@@ -84,6 +86,11 @@ This command will perform the following actions:
 > [!CAUTION]
 > If we are not doing a clean install, we are going to be importing a database. It's important to make sure that a database dump is available in the `.warden/database` directory. The database dump should be named `exampleproject.db.sql.gz`.
 
+Before initialising the project, you must first ensure that Warden is running. You can start Warden by running the following command.
+
+```bash
+warden env up
+```
 
 ### Pre-existing Magento 2 Project
 
