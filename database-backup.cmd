@@ -22,8 +22,11 @@ source .env
 
 warden check-env-file
 
-## Check if n98-magerun2.phar exists
-if [ ! -f ./n98-magerun2.phar ]; then
+## Determine the project root directory
+PROJECT_ROOT="${WARDEN_ENV_PATH}${WARDEN_WEB_ROOT}"
+
+## Check if n98-magerun2.phar exists in project root
+if [ ! -f "${PROJECT_ROOT}/n98-magerun2.phar" ]; then
   print_info "Can't find n98-magerun2.phar, please install by running warden install-magerun... exiting."
   exit 1
 fi
