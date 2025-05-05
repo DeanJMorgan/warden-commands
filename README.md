@@ -66,7 +66,7 @@ MAGENTO_CRYPT_KEY=base64fFfjc1n+SIxmOcb9x+iVmuAfMziC0OrO4nU/sTt6gbE=
 ## Initialise Project
 
 > [!WARNING]
-> If your project is already using Warden, you may want to skip this part. You can ran most of the commands individually. See the list below for the available commands.
+> If your project is already using Warden, you may want to skip this part. You can run most of the commands individually. See the list below for the available commands.
 
 This command will perform the following actions:
 
