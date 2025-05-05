@@ -32,6 +32,14 @@ warden env exec -T php-fpm php bin/magento config:set admin/security/session_lif
 warden env exec -T php-fpm php bin/magento config:set admin/security/password_lifetime 0
 warden env exec -T php-fpm php bin/magento config:set admin/security/password_is_forced 0
 warden env exec -T php-fpm php bin/magento config:set web/cookie/cookie_lifetime 86400
+warden env exec -T php-fpm php bin/magento config:set dev/static/sign 0
+warden env exec -T php-fpm php bin/magento config:set dev/template/minify_html 0
+warden env exec -T php-fpm php bin/magento config:set dev/js/merge_files 0
+warden env exec -T php-fpm php bin/magento config:set dev/js/enable_js_bundling 0
+warden env exec -T php-fpm php bin/magento config:set dev/js/minify_files 0
+warden env exec -T php-fpm php bin/magento config:set dev/js/move_script_to_bottom 0
+warden env exec -T php-fpm php bin/magento config:set dev/css/merge_css_files 0
+warden env exec -T php-fpm php bin/magento config:set dev/css/minify_files 0
 warden env exec -T php-fpm php bin/magento deploy:mode:set developer
 
 ## output to user
