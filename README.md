@@ -60,6 +60,10 @@ MAGENTO_PRIVATE_KEY=[private_key_here] # Your Magento Marketplace private key
 # You can find the encryption key in the `app/etc/env.php` file in the `crypt` section.
 # Example: 'key' => 'base64fFfjc1n+SIxmOcb9x+iVmuAfMziC0OrO4nU/sTt6gbE='
 MAGENTO_CRYPT_KEY=base64fFfjc1n+SIxmOcb9x+iVmuAfMziC0OrO4nU/sTt6gbE=
+
+# If you want to install hyva-theme, you need to add the following values
+HYVA_LICENSE_KEY=[license_key_here] # Your Hyva license key
+HYVA_PROJECT_NAME=[project_name_here] # Your Hyva project name
 ```
 
 
@@ -124,6 +128,7 @@ warden project-init
 - `install-magento` - Install Magento.
 - `install-magerun` - Install n98-magerun.
 - `install-dev-modules` - Install development modules.
+- `install-hyva-theme` - Install Hyva theme and modules.
 - `config-set-developer` - Updates store configuration settings for development environment.
 - `config-set-store-urls` - Updates store URLs in the database.
 - `database-backup` - Backup database.
